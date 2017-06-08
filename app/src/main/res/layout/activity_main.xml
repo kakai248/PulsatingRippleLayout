@@ -11,13 +11,13 @@
         android:id="@+id/content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:rb_color="#EA524B"
-        app:rb_duration="3000"
-        app:rb_radius="30dp"
-        app:rb_rippleAmount="4"
-        app:rb_scale="3.33"
-        app:rb_strokeWidth="1dp"
-        app:rb_type="strokeRipple">
+        app:prl_color="#EA524B"
+        app:prl_duration="3000"
+        app:prl_radius="30dp"
+        app:prl_rippleAmount="4"
+        app:prl_scale="3.33"
+        app:prl_strokeWidth="1dp"
+        app:prl_type="strokeRipple">
 
         <ImageView
             android:layout_width="wrap_content"

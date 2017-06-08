@@ -69,13 +69,13 @@ public class PulsatingRippleLayout extends FrameLayout {
         }
 
         final TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.PulsatingRippleLayout);
-        rippleColor = typedArray.getColor(R.styleable.PulsatingRippleLayout_rb_color, ContextCompat.getColor(context, R.color.rippleColor));
-        rippleStrokeWidth = typedArray.getDimensionPixelSize(R.styleable.PulsatingRippleLayout_rb_strokeWidth, getResources().getDimensionPixelSize(R.dimen.rippleStrokeWidth));
-        rippleRadius = typedArray.getDimensionPixelSize(R.styleable.PulsatingRippleLayout_rb_radius, getResources().getDimensionPixelSize(R.dimen.rippleRadius));
-        rippleDurationTime = typedArray.getInt(R.styleable.PulsatingRippleLayout_rb_duration, DEFAULT_DURATION_TIME);
-        rippleAmount = typedArray.getInt(R.styleable.PulsatingRippleLayout_rb_rippleAmount, DEFAULT_RIPPLE_COUNT);
-        rippleScale = typedArray.getFloat(R.styleable.PulsatingRippleLayout_rb_scale, DEFAULT_SCALE);
-        rippleType = typedArray.getInt(R.styleable.PulsatingRippleLayout_rb_type, DEFAULT_FILL_TYPE);
+        rippleColor = typedArray.getColor(R.styleable.PulsatingRippleLayout_prl_color, ContextCompat.getColor(context, R.color.rippleColor));
+        rippleStrokeWidth = typedArray.getDimensionPixelSize(R.styleable.PulsatingRippleLayout_prl_strokeWidth, getResources().getDimensionPixelSize(R.dimen.rippleStrokeWidth));
+        rippleRadius = typedArray.getDimensionPixelSize(R.styleable.PulsatingRippleLayout_prl_radius, getResources().getDimensionPixelSize(R.dimen.rippleRadius));
+        rippleDurationTime = typedArray.getInt(R.styleable.PulsatingRippleLayout_prl_duration, DEFAULT_DURATION_TIME);
+        rippleAmount = typedArray.getInt(R.styleable.PulsatingRippleLayout_prl_rippleAmount, DEFAULT_RIPPLE_COUNT);
+        rippleScale = typedArray.getFloat(R.styleable.PulsatingRippleLayout_prl_scale, DEFAULT_SCALE);
+        rippleType = typedArray.getInt(R.styleable.PulsatingRippleLayout_prl_type, DEFAULT_FILL_TYPE);
         typedArray.recycle();
 
         rippleDelay = rippleDurationTime / rippleAmount;
