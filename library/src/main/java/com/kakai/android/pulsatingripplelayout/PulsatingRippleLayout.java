@@ -38,7 +38,7 @@ public class PulsatingRippleLayout extends FrameLayout {
     private int rippleDelay;
     private float rippleScale;
     private int rippleType;
-    private Paint paint;
+    private Paint paint = new Paint();
     private boolean animationRunning = false;
     private AnimatorSet animatorSet;
     private ArrayList<Animator> animatorList;
@@ -80,7 +80,6 @@ public class PulsatingRippleLayout extends FrameLayout {
 
         rippleDelay = rippleDurationTime / rippleAmount;
 
-        paint = new Paint();
         paint.setAntiAlias(true);
         paint.setColor(rippleColor);
 
